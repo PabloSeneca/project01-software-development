@@ -1,4 +1,4 @@
-### The Clinejection incident — February 2026
+# The Clinejection incident — February 2026
 
 The Clinejection incident was a real-world cybersecurity event that demonstrated how a prompt injection vulnerability in an AI coding assistant could lead to a software supply-chain attack. It involved Cline, an open-source AI coding assistant, and showed how malicious instructions could exploit an automated AI workflow and ultimately affect software distributed to developers. 
 
@@ -21,9 +21,31 @@ Cline deprecated version 2.3.0, revoked the compromised publishing token, releas
 
 
 **The key lesson:** The Clinejection incident shows that prompt injection is not just a problem with AI generating incorrect answers. When an AI agent has access to development tools, automated workflows, and sensitive credentials, a manipulated agent can become a security risk to the entire software development process.
-For your project, this is an especially useful real-world example because it connects prompt injection, autonomous AI agents, and software security in one incident.
+
+## Official report additions
+Report published: February 24, 2026
+
+### Confirmed Scope
+Cline says only its CLI npm package was affected. Its VS Code/OpenVSX and JetBrains extensions and source code remained uncompromised. The CLI binary was unchanged. Cline reported no uder-data access or exfiltration and no malicious-code delivery.
+
+### Why the exposure continued
+During remediation, the team deleted the wrong npm token, leaving the exposed token usable.
+
+### Response timeline
+| Date and Time | Event |
+|---------------|-------|
+| January 1, 2026 | Private vulnerability report |
+| February 9, 2026 | Public disclosure and workflow removal |
+| February 17, 2026, 03:26 PT | Unauthorized publication |
+| February 17, 2026, 11:23 PT | Corrected release and token revocation complete |
+
+### Security changes
+Cline removed AI triage and caches from publishing workflows, revoked old credentials, and switched npm publishing to OpenID Connect (OIDC) with release provenance. It also began verifying that revoked credentials actually fail.
+
+**Source:** Cline's official incident report, linked below.
 
 ### Sources
-- Adnan Khan, security researcher: Clinejection - original security research and incident timeline
-- The Hacker News: Report on the Cline CLI supply-chain attack
-- Cloud Security Alliance: Security analysis of Clinejection and CI/CD risks
+- [Cline: Security Incident Report](https://cline.bot/blog/post-mortem-unauthorized-cline-cli-npm) - Saoud Rizwan, February 24, 2026
+- [Adnan Khan: Clinejection](https://adnanthekhan.com/posts/clinejection/) - Original security research and incident timeline
+- [The Hacker News: Report on the Cline CLI supply-chain attack](https://thehackernews.com/2026/02/cline-cli-230-supply-chain-attack.html)
+- [Cloud Security Alliance: Security analysis of Clinejection and CI/CD risks](https://labs.cloudsecurityalliance.org/research/csa-research-note-clinejection-prompt-injection-cicd-cache-p/)
