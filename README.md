@@ -1,23 +1,22 @@
-# project01-software-development
-Collaboration for Project 01-software-development presentation
+# The Security Risks of Autonomous AI Agents
+CEP146 - Project 01: Software Development Presentation
 
+## Team Members
+| Name | Student Number |
+|------|----------------|
+| Pablo Almonacid |            |
+| Reihanne Fajilan | 103772224 |
+| Syyed Hussain |              |
 
-## Possible topics for presentation
+## Topic Summary
+This project examines the security risks of AI agents used in software development, focusing on prompt injection: malicious instructions in untrusted content that can influence an agent's actions.
 
-### 1. Developer burnout in the age of AI
+Using the February 2026 Clinejection case and the related unauthorized Cline CLI release, we discuss how agent permissions, connected build systems, and exposed publishing credentials can put software releases at risk. We also explore safeguards such as limited permissions, secure credential management, and human review.
 
-- The pressure to constantly keep up with the latest AI news 
-- Higher productivity expectations from employers
-- No more writing code. Now it's all about reviewing.
+Case study source: [Cline's Security Incident Report](https://cline.bot/blog/post-mortem-unauthorized-cline-cli-npm)
 
-### 2. The security risks of autonomous AI agents
+## YouTube Video
+### Video link: To be added after the final presentation is uploaded to YouTube
 
-- Unauthorized access and data exposure
-- Prompt injection and malicious instructions
-- Unintended actions and loss of human Control
-
-### 3. How AI is changing software developer jobs
-
-- The impact on entry-level jobs and career opportunities
-- The need for new skills and continuous learning
-- Automation of coding tasks and changing job responsibilities 
+## Final Question
+What actions should an AI coding agent be allowed to perform independently, and which should require human approval?
