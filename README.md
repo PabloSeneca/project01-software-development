@@ -4,7 +4,7 @@ CEP146 - Project 01: Software Development Presentation
 ## Team Members
 | Name | Student Number |
 |------|----------------|
-| Pablo Almonacid |            |
+| Pablo Almonacid | 131479263  |
 | Reihanne Fajilan | 103772224 |
 | Syyed Hussain |              |
 
