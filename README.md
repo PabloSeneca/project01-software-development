@@ -16,7 +16,7 @@ Using the February 2026 Clinejection case and the related unauthorized Cline CLI
 Case study source: [Cline's Security Incident Report](https://cline.bot/blog/post-mortem-unauthorized-cline-cli-npm)
 
 ## YouTube Video
-**Video link:** https://youtu.be/XdQ5PMcsCBw
+**Video link:** https://youtu.be/yioY33fQ5jY
 
 ## Final Question
 What actions should an AI coding agent be allowed to perform independently, and which should require human approval?
